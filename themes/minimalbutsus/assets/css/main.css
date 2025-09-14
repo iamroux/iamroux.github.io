@@ -143,11 +143,92 @@ tr:nth-child(even) {
   background: #2c313a;
 }
 
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+}
+
 #avatar-img {
   border-radius: 50%;
   width: 140px;
   height: 140px;
-  margin-left: auto;
+  display: block;
+}
+
+.music-play-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #80bfff;
+  border: 2px solid #23272e;
+  color: #23272e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  -webkit-tap-highlight-color: transparent; /* Remove iOS tap highlight */
+  touch-action: manipulation; /* Improve touch responsiveness */
+}
+
+.music-play-btn:hover {
+  background: #c2e2ff;
+  transform: scale(1.1);
+}
+
+.music-play-btn:active {
+  transform: scale(0.95);
+}
+
+/* Mobile-specific styles - hide music button on mobile */
+@media (max-width: 768px) {
+  .music-play-btn {
+    display: none;
+  }
+}
+
+.music-play-btn svg {
+  margin-left: 2px; /* Slight offset to center the play triangle */
+}
+
+/* Pause icon when music is playing */
+.music-play-btn.playing svg {
+  display: none;
+}
+
+.music-play-btn.playing::after {
+  content: "⏸";
+  font-size: 12px;
+  color: #23272e;
+}
+
+/* Loading state */
+.music-play-btn.loading {
+  animation: pulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hidden YouTube player */
+#youtube-player {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Home page specific styles */
@@ -223,14 +304,29 @@ article > h1:first-child {
     text-align: center;
   }
   
-  #avatar-img {
-    width: 120px;
-    height: 120px;
+  .avatar-container {
     margin: 1em auto 0;
   }
   
-  /* Avatar on about page */
   #avatar-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .music-play-btn {
+    width: 28px;
+    height: 28px;
+    bottom: 3px;
+    right: 3px;
+  }
+  
+  .music-play-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Avatar on about page */
+  img[alt="sisyphus"] {
     width: 140px;
     height: 140px;
   }

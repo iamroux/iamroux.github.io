@@ -3,14 +3,21 @@
     <div class="home-text">
       {{ .Content }}
     </div>
-    {{ $avatar := resources.Get "images/avatar.jpg" }}
-    {{ if $avatar }}
-      {{ $avatarResized := $avatar.Resize "280x280" }}
-      <img src="{{ $avatarResized.RelPermalink }}" alt="Avatar" id="avatar-img" 
-           srcset="{{ ($avatar.Resize "140x140").RelPermalink }} 1x, {{ $avatarResized.RelPermalink }} 2x">
-    {{ else }}
-      <img src="/avatar.jpg" alt="Avatar" id="avatar-img">
-    {{ end }}
+    <div class="avatar-container">
+      {{ $avatar := resources.Get "images/avatar.jpg" }}
+      {{ if $avatar }}
+        {{ $avatarResized := $avatar.Resize "280x280" }}
+        <img src="{{ $avatarResized.RelPermalink }}" alt="Avatar" id="avatar-img" 
+             srcset="{{ ($avatar.Resize "140x140").RelPermalink }} 1x, {{ $avatarResized.RelPermalink }} 2x">
+      {{ else }}
+        <img src="/avatar.jpg" alt="Avatar" id="avatar-img">
+      {{ end }}
+      <button class="music-play-btn" id="musicPlayBtn" title="Play my theme song">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </button>
+    </div>
   </div>
   <h2 class="posts-heading">Posts</h2>
   <ul>
