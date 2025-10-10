@@ -1,20 +1,20 @@
-/* Minimal home page layout improvements */
-.home-header {
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 2em;
-  width: 100%;
+/* Base styles */
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #23272e;
+  color: #e0e0e0;
+  font-size: 18px;
 }
 
-.home-text {
-  min-width: 200px;
-  flex: 1;
+main {
+  hyphens: auto;
 }
 
-/* Improve link readability and appearance */
+/* Links */
 a {
   color: #80bfff;
   font-weight: 500;
@@ -27,18 +27,34 @@ a:focus {
   text-decoration: underline;
 }
 
-body {
-  max-width: 800px;
-  margin: auto;
-  padding: 1em;
-  line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background: #23272e;
-  color: #e0e0e0;
-  font-size: 18px;
+footer a {
+  text-decoration: none;
 }
 
-/* header and footer areas */
+/* Typography */
+h1,
+h2,
+h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+main > h1:first-child,
+article > h1:first-child {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.title {
+  font-size: 1.1em;
+}
+
+.date {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Header and footer */
 .menu {
   padding: 0;
 }
@@ -67,20 +83,12 @@ footer {
   text-align: center;
 }
 
-.title {
-  font-size: 1.1em;
-}
-
-footer a {
-  text-decoration: none;
-}
-
 hr {
   border-style: dashed;
   color: #444;
 }
 
-/* code */
+/* Code blocks */
 pre {
   border: 1px solid #444;
   box-shadow: 5px 5px 5px #222;
@@ -103,17 +111,14 @@ pre code {
   background: none;
 }
 
-/* misc elements */
+/* Media elements */
 img,
 iframe,
 video {
   max-width: 100%;
 }
 
-main {
-  hyphens: auto;
-}
-
+/* Misc elements */
 blockquote {
   background: #23272e;
   border-left: 5px solid #3a3f4b;
@@ -143,6 +148,31 @@ tr:nth-child(even) {
   background: #2c313a;
 }
 
+/* Home page layout */
+.home-header {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.home-text {
+  min-width: 200px;
+  flex: 1;
+}
+
+.posts-heading {
+  margin-top: 2em;
+}
+
+.show-more {
+  margin-top: 0.5em;
+}
+
+/* Avatar */
 .avatar-container {
   position: relative;
   display: inline-block;
@@ -156,6 +186,16 @@ tr:nth-child(even) {
   display: block;
 }
 
+img[alt="sisyphus"] {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 2em auto;
+  object-fit: cover;
+}
+
+/* Music player button */
 .music-play-btn {
   position: absolute;
   bottom: 5px;
@@ -172,8 +212,8 @@ tr:nth-child(even) {
   justify-content: center;
   transition: all 0.2s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  -webkit-tap-highlight-color: transparent; /* Remove iOS tap highlight */
-  touch-action: manipulation; /* Improve touch responsiveness */
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .music-play-btn:hover {
@@ -185,18 +225,10 @@ tr:nth-child(even) {
   transform: scale(0.95);
 }
 
-/* Mobile-specific styles - hide music button on mobile */
-@media (max-width: 768px) {
-  .music-play-btn {
-    display: none;
-  }
-}
-
 .music-play-btn svg {
-  margin-left: 2px; /* Slight offset to center the play triangle */
+  margin-left: 2px;
 }
 
-/* Pause icon when music is playing */
 .music-play-btn.playing svg {
   display: none;
 }
@@ -207,7 +239,6 @@ tr:nth-child(even) {
   color: #23272e;
 }
 
-/* Loading state */
 .music-play-btn.loading {
   animation: pulse 1s ease-in-out infinite alternate;
 }
@@ -221,7 +252,6 @@ tr:nth-child(even) {
   }
 }
 
-/* Hidden YouTube player */
 #youtube-player {
   position: absolute;
   left: -9999px;
@@ -229,45 +259,6 @@ tr:nth-child(even) {
   height: 1px;
   opacity: 0;
   pointer-events: none;
-}
-
-/* Home page specific styles */
-.posts-heading {
-  margin-top: 2em;
-}
-
-.show-more {
-  margin-top: 0.5em;
-}
-
-/* About page avatar styling */
-img[alt="sisyphus"] {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: block;
-  margin: 2em auto;
-  object-fit: cover;
-}
-
-/* Typography improvements */
-.date {
-  color: #888;
-  font-size: 0.9em;
-}
-
-h1,
-h2,
-h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-/* Center page titles */
-main > h1:first-child,
-article > h1:first-child {
-  text-align: center;
-  margin-bottom: 1.5em;
 }
 
 /* Back to top button */
@@ -293,15 +284,16 @@ article > h1:first-child {
   display: block;
 }
 
-/* Responsive breakpoints */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
-  body {
-    padding: 1em;
-  }
-  
   .home-header {
     flex-direction: column;
     text-align: center;
+  }
+  
+  .home-text {
+    min-width: auto;
+    order: 1;
   }
   
   .avatar-container {
@@ -313,31 +305,12 @@ article > h1:first-child {
     height: 120px;
   }
   
-  .music-play-btn {
-    width: 28px;
-    height: 28px;
-    bottom: 3px;
-    right: 3px;
-  }
-  
-  .music-play-btn svg {
-    width: 12px;
-    height: 12px;
-  }
-  
-  /* Avatar on about page */
   img[alt="sisyphus"] {
     width: 140px;
     height: 140px;
   }
   
-  .home-text {
-    min-width: auto;
-    order: 1;
-  }
-  
   .menu li {
-    display: inline-block;
     margin: 0.2em;
   }
   
@@ -346,9 +319,12 @@ article > h1:first-child {
     font-size: 0.9em;
   }
   
+  .music-play-btn {
+    display: none;
+  }
+  
   .show-more {
     text-align: left;
-    margin-top: 0.5em;
   }
   
   pre {
@@ -359,14 +335,14 @@ article > h1:first-child {
   code {
     font-size: 14px;
   }
-}@media (max-width: 480px) {
+}
+
+/* Phone styles */
+@media (max-width: 480px) {
   body {
     font-size: 16px;
-    padding: 1em;
   }
-
   
-  /* Hide about page avatar on phones */
   img[alt="sisyphus"] {
     display: none;
   }
