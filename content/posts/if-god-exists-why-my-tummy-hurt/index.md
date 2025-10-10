@@ -18,15 +18,15 @@ First, there's "good" suffering; pain with clear purpose. This is the kind that 
 
 But then there is unnecessary suffering; pain with no apparent reason, no character-building purpose. A theist, however, will argue there is a Divine Master Plan, and that even seemingly pointless suffering is part of a greater, incomprehensible design. They'll tell you that because you don't know why a bad thing happened, you can't say it's pointless. Even a child having cancer, they might argue, could be for a "greater good." Maybe it's a test from God.
 
-![](godsplan.jpg)
+{{< img src="godsplan.jpg" width="300px" alt="God's Plan meme" >}}
 
 
 ## The Logic of the Apparent:
 As humans, we must judge the world based on the apparent evidence. We don't have access to divine hidden plans; we only have our logic and our senses.
 
-Imagine you see a man violently beating his wife and kids in the middle of a road. Your immediate, rational judgment would be that he is doing something cruel and harmful. You wouldn’t assume, “Perhaps he has a hidden, benevolent reason we can’t understand 🤓.” From the standpoint of available evidence, the only reasonable conclusion is that the man is acting maliciously.
+Imagine you see a man violently beating his wife and kids in the middle of a road. Your immediate, rational judgment would be that he is doing something cruel and harmful. You wouldn't assume, "Perhaps he has a hidden, benevolent reason we can't understand 🤓." From the standpoint of available evidence, the only reasonable conclusion is that the man is acting maliciously.
 
-![](sir.gif)
+{{< img src="sir.gif" width="300px" alt="Reaction GIF" >}}
 
 This highlights the absurdity of the "God's plan" argument. We're asked to abandon our most basic logical conclusions just because the actor is a divine being.
 
