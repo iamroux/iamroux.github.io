@@ -1,7 +1,7 @@
 ---
 title: "Bhar OS"
 date: 2023-10-19T00:22:54+05:30
-draft: false
+draft: true
 tags: ['linux']
 ---
 
