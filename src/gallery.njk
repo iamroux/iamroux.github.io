@@ -1,0 +1,60 @@
+---
+layout: base.njk
+title: Gallery
+permalink: /gallery/
+---
+
+{% set base = "https://raw.githubusercontent.com/saqibmir1/pixelrack/main/gallery/images/" %}
+{% set images = [
+  "photo_2025-09-03_14-37-36.jpg",
+  "photo_2025-09-03_14-37-41.jpg",
+  "photo_2025-09-03_14-37-47.jpg",
+  "photo_2025-09-03_14-37-52.jpg",
+  "WhatsApp Image 2025-09-04 at 11.19.10 AM.jpeg",
+  "WhatsApp Image 2025-09-04 at 11.20.11 AM.jpeg",
+  "road.jpeg",
+  "IMG_2467.JPG",
+  "IMG_2660.JPG",
+  "IMG_2662.JPG",
+  "IMG_2908.JPG",
+  "IMG_2910.JPG",
+  "IMG_3050.JPG"
+] %}
+
+<h1>Gallery</h1>
+
+<div class="gallery-masonry">
+  {% for img in images %}
+  <div class="gallery-item">
+    <img src="{{ base }}{{ img | urlencode }}" alt="Gallery image" loading="lazy" class="gallery-img" data-full="{{ base }}{{ img | urlencode }}" />
+  </div>
+  {% endfor %}
+</div>
+
+<div id="lightbox" class="lightbox" style="display:none;">
+  <img id="lightbox-img" src="" alt="Full size image" />
+</div>
+
+<script>
+(function() {
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightbox-img');
+
+  document.querySelectorAll('.gallery-img').forEach(function(img) {
+    img.addEventListener('click', function() {
+      lightboxImg.style.display = 'none';
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.getAttribute('data-full');
+    });
+  });
+
+  lightboxImg.addEventListener('load', function() {
+    lightboxImg.style.display = 'block';
+  });
+
+  lightbox.addEventListener('click', function() {
+    lightbox.style.display = 'none';
+    lightboxImg.src = '';
+  });
+})();
+</script>

@@ -1,9 +1,0 @@
-{{ $src := .Get "src" }}
-{{ $width := .Get "width" | default "100%" }}
-{{ $alt := .Get "alt" | default "" }}
-{{ $center := .Get "center" | default "true" }}
-
-<img src="{{ $src }}" 
-     alt="{{ $alt }}" 
-     style="width: {{ $width }}; max-width: 100%;{{ if eq $center "true" }} display: block; margin: 0 auto;{{ end }}" />
-

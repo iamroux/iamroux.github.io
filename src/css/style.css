@@ -1,0 +1,481 @@
+/* ---- Reset ---- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---- Light theme ---- */
+:root {
+  --bg: #e8e4dc;
+  --bg-surface: #dfdbd2;
+  --fg: #3a3632;
+  --fg-heading: #2a2724;
+  --muted: #8a8278;
+  --rule: #c4bdb0;
+  --link: #6b5d4f;
+  --link-hover: #4a3f34;
+  --code-bg: rgba(0, 0, 0, 0.045);
+  --selection: rgba(107, 93, 79, 0.15);
+  --serif: "Georgia", "Times New Roman", serif;
+  --mono: "Menlo", "Consolas", monospace;
+}
+
+/* ---- Dark theme ---- */
+[data-theme="dark"] {
+  --bg: #1a1917;
+  --bg-surface: #232220;
+  --fg: #b5ad9e;
+  --fg-heading: #cdc5b6;
+  --muted: #7d776b;
+  --rule: #333029;
+  --link: #b8a07a;
+  --link-hover: #d0ba94;
+  --code-bg: rgba(255, 255, 255, 0.05);
+  --selection: rgba(184, 160, 122, 0.15);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+/* ---- Base ---- */
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.8;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---- Typography ---- */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--fg-heading);
+  margin-bottom: 0.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--fg-heading);
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--fg-heading);
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg-heading);
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  hanging-punctuation: first;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--fg-heading);
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 2px solid var(--rule);
+  padding-left: 1.3rem;
+  margin: 2rem 0;
+  color: var(--muted);
+  font-style: italic;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  background: var(--code-bg);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1.1rem 1.3rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  line-height: 1.5;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 3rem 0;
+}
+
+ol, ul {
+  margin-bottom: 1.4rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--rule);
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+  color: var(--fg-heading);
+}
+
+/* ---- Links ---- */
+a {
+  color: var(--link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* ---- Header ---- */
+.site-header {
+  margin-bottom: 4rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.5rem;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--fg-heading);
+  letter-spacing: 0.03em;
+  margin-right: auto;
+}
+
+.site-name:hover {
+  color: var(--fg-heading);
+}
+
+.nav-links {
+  display: flex;
+  align-items: baseline;
+  gap: 1.1rem;
+  font-size: 0.85rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.nav-links a:hover {
+  color: var(--fg);
+}
+
+/* ---- Theme toggle ---- */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 0.85rem;
+  padding: 0;
+  margin-left: 0.3rem;
+  transition: color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--fg);
+}
+
+/* ---- Homepage ---- */
+.intro {
+  margin-bottom: 3rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* ---- Post lists ---- */
+.post-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.post-list li:first-child {
+  border-top: 1px solid var(--rule);
+}
+
+.post-list a {
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.post-meta {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.post-list time,
+.section-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  font-style: italic;
+}
+
+.post-meta time::before {
+  content: "·";
+  margin-right: 0.6rem;
+  color: var(--rule);
+}
+
+/* ---- Post ---- */
+.post-header {
+  margin-bottom: 3rem;
+}
+
+.post-header time {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.post-header .section-label {
+  margin-left: 0.75rem;
+}
+
+.post-body {
+  margin-top: 1.5rem;
+}
+
+/* drop cap removed — looked off on posts starting with bold/code */
+
+/* ---- Images ---- */
+.post-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem 0;
+  border-radius: 3px;
+}
+
+/* ---- Gallery ---- */
+.gallery-masonry {
+  column-count: 3;
+  column-gap: 0.5em;
+  margin: 2.5rem 0;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg-surface);
+  padding: 0.35em;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-item:hover {
+  opacity: 0.85;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+/* ---- Syntax highlighting (Prism-compatible, muted tones) ---- */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata { color: var(--muted); font-style: italic; }
+.token.punctuation { color: var(--fg); }
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol { color: var(--link); }
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin { color: var(--fg-heading); }
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable { color: var(--muted); }
+.token.atrule,
+.token.attr-value,
+.token.keyword { color: var(--link-hover); }
+.token.function,
+.token.class-name { color: var(--fg-heading); }
+
+/* ---- Footer ---- */
+footer {
+  margin-top: 6rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    padding: 2rem 1.2rem;
+  }
+
+  .site-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .site-header nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.8rem 0;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    font-size: 0.82rem;
+  }
+
+  .post-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    padding: 0.6rem 0;
+  }
+
+  .post-list a {
+    margin-right: 0;
+  }
+
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  pre {
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .gallery-masonry {
+    column-count: 2;
+    column-gap: 0.3em;
+  }
+
+  .gallery-item {
+    padding: 0.25em;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+  }
+}
