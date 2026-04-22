@@ -15,7 +15,6 @@ i decided i should move to wayland too since it is modern and more efficient tha
 
 Hyprland is a dynamic tiling Wayland compositor based on wlroots. Although is an under development project, but it has already gained a lot of popularity and even though things break, it's not a big deal. I can fix them with a little research (i have no life).
 
-Hyprland supports a variety of layouts, including tiling, floating, and tabbed windows. It also has a number of features that are not found in other Wayland compositors, such as window animations, rounded corners, and Dual-Kawase Blur on transparent windows.
 
 ## Why hyprland
 DWM had everything i ever needed but hyprland is just better. In DWM, i had to do a lot of stuff on my own. Patches, configuring touchpad, window swallowing etc. Not to mention

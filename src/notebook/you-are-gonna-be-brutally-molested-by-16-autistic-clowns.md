@@ -5,28 +5,25 @@ date: 2025-10-22
 section: notebook
 ---
 
-## Introduction
+I was talking to my boss yesterday evening. Somehow, the conversation ended up on the topic of older men harassing boys. 
 
-I was talking with my employer yesterday evening. For reasons you don't need to know, the topic shifted into the issue of older men harassing boys (and likely girls too, though they can't speak about it openly). My employer's Conclusion? "These older men are sex deprived. That's why Islam allows 4 wives because men's sexual desire lasts longer than women's. Men keep wanting sex till 60s or 70s, while women usually fade out after 40 because of menopause."
-Yes. That is the kind of casual coffee conversation I have with my boss.
+His take on it? "These older men are sex deprived. That's why Islam allows 4 wives because men's sexual desire lasts longer than women's. Men keep wanting sex till their 60s or 70s, while women usually fade out after 40 because of menopause."
 
+Yep. That's a casual coffee conversation with my boss.
 
 ![image](../absolute-cinema.jpg)
 
-## The Argument and Its Problems
+He wasn't explicitly saying polygamy stops harassment outright. His point was more that men's desire outlasts women's, so the four wives rule makes sense and explains why older men get frustrated.
 
-He wasn't saying "polygamy prevents harrasment outright". His point was more like men's desire supposedly outlasts women's, so Islam wisely allows four wives and by extension, also explains why some older men end up frustrated.
+Even if you entertain that, the logic falls apart instantly:
 
-Even then the logic collapses fast:
-1. Menopause != death of desire. Its a biological shift, not an off-switch. Plenty of women stay sexually active well beyond 40.
-2. Men's libido also declines with age: testesterone drops, erectile problems (real). etc. The flame doesnt exactly roar forever.
-3. Even if men's desire did last longer, why exactly 4 wives? Why not 2? or 6? Or unlimited? Why not just remarriage after divorce?
-4. Linking harrasment to "lack of wives" is absurd. Abuse isnt fixed by assigning the abuser with partners. Thats like saying robbery is solved by giving thieves a stipend.
+1. Menopause doesn't mean your sex drive dies. It's a biological shift, not an off-switch. 
+2. Men's libido declines with age too. Testosterone drops, ED is real. It's not like the flame roars forever.
+3. Even if men wanted it longer, why exactly 4 wives? Why not 2? Or 6? Or unlimited? Why not just remarry after a divorce?
+4. Linking harassment to "lack of wives" is insane. You don't fix abusers by handing them more partners. That's like trying to stop robberies by giving thieves a monthly stipend.
 
-This is classic ad hoc rationalization: start with a religious rule, then bolt on some modern biology to make it sound timeless and rational and divine knowledge.
+This is just classic ad hoc rationalization. You start with an ancient religious rule, and then you bolt on some pseudo-biology to make it sound like timeless, divine wisdom.
 
-This kind of logic is common. People do it all the time. Take an old rule, then squeeze modern science or social issues into it until it looks "divine". It gives an illusion of wisdom, but it's really just mental gymnastics.
+People do this all the time. They take an old rule and try to squeeze modern science into it until it looks smart. It's just mental gymnastics.
 
-
-
-**Why It Matters**: Because it shows how beliefs are defended, not discovered. These explanations dont spring from evidence. They are manufactured to protect tradition. That's why you keep hearing the evergreen line "Hamari kitaab me toh yeh hazaron saal pehle likha tha."
+The takeaway here is that these beliefs are defended, not discovered. These explanations dont spring from evidence. They are manufactured to protect tradition. That's why you keep hearing the evergreen line "Hamari kitaab me toh yeh hazaron saal pehle likha tha."

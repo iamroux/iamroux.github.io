@@ -183,7 +183,6 @@ Then open that particular md file and write the conent in md.
 - ```--noCache flag```:  This flag tells Hugo not to use any cached data and forces a full rebuild of the site.
 
 ### Conclusion
-In conclusion, migrating to hugo has been a transformative expreience. It is minimal, past and flexible. If you are tired
-of manually writing html for each blog, i highly recommend considering hugo. Dont be an internet peasant, be a landlord, own a website lol.
+Moving to Hugo was 100% worth it. It's fast, minimal, and I don't have to write raw HTML anymore. If you're still manually writing HTML tags for every blog post, just switch to Hugo. Dont be an internet peasant, be a landlord, own a website lol.
 
 **You can checkout my website's source code for more comprehensive guide [here](https://github.com/saqibmir1/saqibmir1.github.io)**

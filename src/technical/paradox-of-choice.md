@@ -7,7 +7,7 @@ section: technical
 
 ## Introduction
 
-There's a book called *The Paradox of Choice* by Barry Schwartz. The idea is — more options can actually make people more stressed and indecisive. Sounds weird, but it's real. And it shows up in the Linux world more than you'd think.
+The Paradox of Choice: The idea — more options can actually make people more stressed and indecisive. Sounds weird, but it is true. And it shows up in the Linux world more than you'd think.
 
 The number of Linux distros out there is insane. If you're new, it's easy to get lost. You either pick something random and hope for the best, or fall into a rabbit hole of forums and opinions trying to find "the best one."
 

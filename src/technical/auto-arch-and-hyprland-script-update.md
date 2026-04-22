@@ -7,7 +7,7 @@ section: technical
 
 ## Introduction
 
-I've recently made some updates to my [Auto Arch]() and [Hyrpland Dotfiles]() scripts, aiming to streamline the Arch Linux installation process. While I initially thought about combining the two, I decided to keep them separate but interconnected. Now, the Auto Arch script automatically clones the Hyprland Dotfiles repository into the user's home folder, providing a straightforward way to get both Arch Linux and the Hyprland configuration in one go.
+I updated my Auto Arch and Hyprland scripts to make installing Arch less annoying. I thought about merging them into one giant script, but decided to keep them separate. Now, the auto-arch script just automatically clones my hyprland dotfiles into your home directory at the end, so you get the OS and the rice in one go.
 
 
 
