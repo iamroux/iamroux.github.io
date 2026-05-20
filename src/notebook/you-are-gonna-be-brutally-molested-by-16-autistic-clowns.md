@@ -5,11 +5,11 @@ date: 2025-10-22
 section: notebook
 ---
 
-I was talking to my boss yesterday evening. Somehow, the conversation ended up on the topic of older men harassing boys. 
+I was talking to an acquaintance yesterday evening. Somehow, the conversation ended up on the topic of older men harassing boys. 
 
 His take on it? "These older men are sex deprived. That's why Islam allows 4 wives because men's sexual desire lasts longer than women's. Men keep wanting sex till their 60s or 70s, while women usually fade out after 40 because of menopause."
 
-Yep. That's a casual coffee conversation with my boss.
+Yep. That was an actual coffee conversation I had.
 
 ![image](../absolute-cinema.jpg)
 

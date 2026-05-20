@@ -7,10 +7,13 @@ section: technical
 
 ## Introduction
 
-Got a new laptop for work—an ASUS TUF F15 with an RTX 4070. Naturally, I wiped Windows and threw Arch on it immediately. Biggest beef steak. Two days of random freezes, black screens, and Xorg issues thanks to NVIDIA's garbage drivers. I got tired of fixing it and decided to install the distro that's 'certified' for this laptop and 'just works': Pop!_OS 22.04. 
+Got a new laptop for work. An ASUS TUF F15 with an RTX 4070. Naturally, I wiped Windows and threw Arch on it immediately. Biggest beef steak.
+
+This resulted in two days of random freezes, black screens, and Xorg issues due to NVIDIA driver incompatibility. I got tired of fixing it and decided to install the distro that's 'certified' for this laptop and 'just works': 
+Pop Exclamation Mark Underscore OS 22.04.
 That was an even bigger beef steak.
 
-## “Developer-friendly” – My Actual Ass
+## “Developer-friendly” – Bomboclat Wallahi
 I needed Hugo to preview my site. I ran `sudo apt install hugo`, then `hugo server`, and immediately got:
 
 ```This does not appear to be a Hugo site.```
@@ -20,7 +23,7 @@ Turns out the Ubuntu repo version is so ancient it doesn't even support Go modul
 And Hugo wasn't the only one. Same issue with:
 
 - Node.js (still on 18 while the rest of the planet is on 22)
-- Docker (old enough to collect Social Security)
+- Docker (significantly outdated)
 - Neovim (missing half the Lua API)
 - Rustup (lol good luck)
 - Even bat was an ancient version that didn’t support syntax highlighting for half the languages I use

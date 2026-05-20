@@ -6,6 +6,10 @@ permalink: /about/
 
 # About
 
-An outrageous concoction of excessive self-consciousness and melancholic tendencies, with a dash of quirkiness and a sprinkle of oddball charm. When I'm not busy staring at the wall and contemplating the futility of existence, you can usually find me binging on cat videos and tinkering with free and open source software.
+I build things, think about things, and occasionally write them down. 
+
+I spend most of my time tinkering with free and open-source software, working on my own projects, or overthinking everything else. This site is just a personal repository for my technical notes, random thoughts, and whatever else I happen to be focused on. 
+
+Currently, that means spending way too much time working on [Sus Pixels](https://pixels.iamroux.xyz).
 
 ![sisyphus](/avatar.jpg)
