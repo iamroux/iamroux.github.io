@@ -21,16 +21,13 @@ section: technical
 I use [Arch Linux](https://archlinux.org/) beacuse of its simplicity and KISS ( keep it simple, stupid!) philosophy. Arch linux has a rolling release model. It also has a large and active community, which means there is a lot of support available if you need it.
 
 - ```Terminal```:
-[Foot](https://codeberg.org/dnkl/foot): I use this tiny program called foot as my terminal emulator. Its pretty cool. (I like feet.)
+[Foot](https://codeberg.org/dnkl/foot): I use foot 😋 as my terminal emulator. Its pretty cool. 
 
 - ```Shell```:
 I use [zsh](https://www.zsh.org/) as my default shell. It supports a lot of plugins and has auto tab completion and syntax highlighting too. You can try my zsh configurations here
 
-- ```Text Editor```:
-[Neovim](https://neovim.io/), which is terminal based vim like text editor with a little more features and plugins. Like vim, it doesn't require mouse and is completely keyboard centric.
-
 - ```Window Manager/compositor```:
-I am using [Hyprland](https://hyprland.org/) which is a dynamic tiling Wayland compositor based on wlroots. It is easy to customize and rice. I have already written a blog on [how to rice hyprland like mine](https://saqibmir.me/blog/switching-to-hyprland/).
+I am using [Hyprland](https://hyprland.org/) which is a dynamic tiling Wayland compositor. It is easy to customize and rice.
 
 - ```Media Player```:
 For media (music/videos) consumption, i use [mpv](https://mpv.io/) which is a Lightweight, opensource and is highly customoizable and can be extended with scripts and plugins.
@@ -42,13 +39,13 @@ I keep switching browsers every once in a while because they all suck. The one t
 I use a terminal based file manager called [lf](https://github.com/gokcehan/lf) which is just like ranger but its written in go so its a lot faster.It also has a lot of great features like tabs, previewing of files and integration with other cli tools. I also use [thunar]() sometimes.
 
 - ```Synchronization```:
-[Syncthing](https://syncthing.net/); Useful for synching files over the same network.
+[Syncthing](https://syncthing.net/): Useful for synching files over the same network.
 
 - ```Office Suite```:
 [Libre Office](https://www.libreoffice.org/): I mean do i even have any other choice here?
 
 - ```Consoom```:
-[Jellyfin](https://jellyfin.org/) is a media server and suite of multimedia applications designed to organize, manage, and share digital media files to networked devices. I consoom movies and shows using jellyfin sometimes.
+[Jellyfin](https://jellyfin.org/):I consoom movies and shows using jellyfin sometimes.
 
 - ```Status Bar```:
 I am using [waybar-hyprland](https://wiki.hyprland.org/Useful-Utilities/Status-Bars/) which is a fork of waybar. It's pretty simple to use and configure.
@@ -58,7 +55,7 @@ I am using [waybar-hyprland](https://wiki.hyprland.org/Useful-Utilities/Status-B
 [zathura](https://github.com/pwmt/zathura) has vim keybindings. What else can one ask for?
 
 - ```Password Manager```:
-[KeePassXC](https://keepassxc.org/) is an offline password manager. I wrote a blog about [how i sync my passwords across multiple devices](https://saqibmir.me/blog/passwords/)
+[KeePassXC](https://keepassxc.org/) is an offline password manager.
 
 ## Phone
 
